@@ -23,3 +23,14 @@ def guess_number(low, high, num_attempts):
   :param num_attempts: The number of attempts the user is given to guess the correct number.
   :returns: True if the user answers any attempt correctly, False otherwise.
   """
+  import random
+  expected = random.randint(low, high)
+  print("Guess a number betweeen {} and {}.  You have {} tries.".format(low, high, num_attempts))
+  for i in range(num_attempts):
+    actual = input("Guess the number: ")
+    if not actual.isnumeric():
+      continue
+    actual = int(actual)
+    if actual == expected:
+      return True
+  return False
