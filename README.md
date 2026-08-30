@@ -1,4 +1,4 @@
-# For Loop Practice
+# For Loops Exercise
 
 The given code in this repository contains files, named `number_guessing.py`, `virus_transmissiion.py`, and `loopy_turtles.py`, that contain several functions that must be completed in order for the program in `main.py` to work.
 
